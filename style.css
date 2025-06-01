@@ -113,7 +113,7 @@ main {
 
 .list {
     .item {
-        backgound:var(--background-secondary);
+        background:var(--background-secondary);
         padding:1.2rem;
         margin-bottom: 1.2;
         display: flex;
@@ -133,8 +133,51 @@ main {
         }
 
         input {
+         display: none;
+        }
+
+        .custom-checkbox {
+            width: 1.6rem;
+            height: 1.6rem;
+            border: 1px solid var(--border-primary);
+            border-radius: .6rem;
+
 
         }
+
+        div:has(input:checked) {
+            .custom-checkbox {
+                background: var(--color-brand);
+                border: 1px solid var(--color-brand);
+                transition: .2s;
+            }
+              
+            label{
+                text-decoration: line-through;
+            }
+        
+
+            label {
+                cursor: pointer;
+            }
+
+            buttom {
+                background: none;
+                border: none;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                    width:1.6rem;
+                    opacity:0.7;
+                }
+
+            }
+        }
+
+
+    
 
     }
 }

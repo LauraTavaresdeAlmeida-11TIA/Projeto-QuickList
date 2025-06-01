@@ -115,7 +115,7 @@ main {
     .item {
         background:var(--background-secondary);
         padding:1.2rem;
-        margin-bottom: 1.2;
+        margin-bottom: 1.2rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -151,17 +151,18 @@ main {
                 border: 1px solid var(--color-brand);
                 transition: .2s;
             }
+        
               
-            label{
+            label {
                 text-decoration: line-through;
             }
-        
+        }
 
             label {
                 cursor: pointer;
             }
 
-            buttom {
+             button {
                 background: none;
                 border: none;
                 display: flex;
@@ -173,8 +174,9 @@ main {
                     opacity:0.7;
                 }
 
+                
             }
-        }
+        
 
 
     
